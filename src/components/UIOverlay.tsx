@@ -1,6 +1,5 @@
 import { useMachineStore } from "../store";
 import { useRef, useState } from 'react';
-import { exportSTL, saveString } from '../utils/stlExporter';
 import { VisualSettingsPanel } from './VisualSettingsPanel';
 // We need access to the CURRENT geometry to export it. 
 // The geometry lives in MaterialCore state. 

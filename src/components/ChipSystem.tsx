@@ -1,6 +1,6 @@
 import { useRef, useMemo } from 'react'
 import { useFrame } from '@react-three/fiber'
-import { InstancedMesh, Object3D, DynamicDrawUsage, Vector3 } from 'three'
+import { InstancedMesh, Object3D, Vector3 } from 'three'
 import { useMachineStore } from '../store'
 
 const MAX_CHIPS = 2000;
@@ -24,7 +24,7 @@ export function ChipSystem() {
 
     const dummy = useMemo(() => new Object3D(), []);
 
-    useFrame((state, delta) => {
+    useFrame((_state, delta) => {
         if (!meshRef.current) return;
 
         // 1. Spawn Logic

@@ -45,7 +45,7 @@ function Scene() {
 
       {/* Post Processing for Hyper Realism */}
       <EffectComposer>
-        <SSAO radius={0.1} intensity={20} luminanceInfluence={0.6} color="black" />
+        <SSAO radius={0.1} intensity={20} luminanceInfluence={0.6} />
         <Bloom luminanceThreshold={0.5} luminanceSmoothing={0.025} intensity={0.5} />
       </EffectComposer>
     </>
